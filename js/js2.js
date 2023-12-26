@@ -107,10 +107,12 @@ function debounce(fn) {
     return function() {
         clearTimeout(interval)
         interval = setTimeout(() => {
-            let result = fn()
-            result
-            .then((reps) => giveNewEventListener(reps))
-            .catch((err) => console.log(`Error : ${err}`))
+            if (!input.value.split("").every(el => el == " ")) { 
+                let result = fn()
+                result
+                .then((reps) => giveNewEventListener(reps))
+                .catch((err) => console.log(`Error : ${err}`))
+            }
         }, 800)
     }
 }
