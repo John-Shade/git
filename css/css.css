@@ -1,0 +1,116 @@
+.form {
+    min-width: 500px;
+    width: fit-content;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.form__input {
+    padding: 0;
+    padding-left: 16px;
+    width: 100%;
+
+    height: 60px;
+
+    font-size: 48px;
+}
+
+.form__rep-container {
+    height: fit-content;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.form__rep-container--necessary {
+    margin-top: 50px;
+}
+  
+
+.form__rep-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.form__rep-list--all {
+    font-size: 30px;
+    background-color: rgb(226,226,226);
+}
+
+.form__rep-list--container {
+    width: 100%;
+    background-color: rgb(226,123,235);
+    font-size: 24px;
+    line-height: 28.13px
+}
+
+.form__rep-item--all{
+    border: 1px solid black;
+    border-top: 0;
+}
+
+.form__rep-item--all:hover {
+    background-color: rgb(101,205,249);
+}
+
+.form__rep-item--container {
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items:center;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-bottom: 0;
+}
+
+
+.form__rep-item--container:last-child {
+    border-bottom: 1px solid black;
+}
+
+.form__rep-item {
+    height: 50px;
+    padding: 16px 16px;
+    box-sizing: border-box;
+}
+
+.form__rep-item--all {
+    height: 50px;
+}
+
+.form__rep-button {
+    background-color: transparent;
+
+    width: 42px;
+    height: 42px;
+
+    border: 0 solid;
+    padding: 0;
+
+    margin-right: 5px;
+}
+
+.form__rep-button::after {
+    content: "";
+    display: block;
+    width: 54px;
+    height: 4px;
+    background-color: red;
+    box-sizing: border-box;
+    transform: translate(-6px, -2px) rotate(45deg);
+    
+}
+
+.form__rep-button::before {
+    content: "";
+    display: block;
+    width: 54px;
+    height: 4px;
+    background-color: red;
+    box-sizing: border-box;
+    transform: translate(-6px, 2px) rotate(-45deg);
+
+}
