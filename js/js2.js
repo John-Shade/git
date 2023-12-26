@@ -12,16 +12,6 @@ function findReps() {
             .then((reps) => resolve(reps))
             .catch((err) => reject(console.log(err)))
     })
-    // .then((reps) => {
-    //         deleteAllReps()
-    //         let conAll = document.querySelector(".form__rep-container--all")
-    //         conAll.removeEventListener("click", move)
-    //         move = moveItem(reps)  
-    //         conAll.addEventListener("click",  move)
-    //         reps.items.forEach(el => renderReps(el))
-    //     }
-    // )
-    // .catch((err) => console.log(`Error : ${err}`))
 }
 
 function giveNewEventListener (reps) {
